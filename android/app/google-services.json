@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981243475006",
+    "project_id": "rocketsciencelogin",
+    "storage_bucket": "rocketsciencelogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981243475006:android:b4632de63ba7abf48e4d6f",
+        "android_client_info": {
+          "package_name": "com.example.rocket_science_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmrNJwzCD07sWq0mbOeO-J2J4AJjG-VPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
