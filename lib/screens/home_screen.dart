@@ -1,8 +1,6 @@
-import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:rocket_science_login/services/fire_auth.dart';
 import 'package:rocket_science_login/widgets/custom_buttons.dart';
-import 'package:rocket_science_login/widgets/custom_textfield.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({

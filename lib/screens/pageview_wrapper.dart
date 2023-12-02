@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:rocket_science_login/screens/date_of_birth_screen.dart';
 import 'package:rocket_science_login/screens/email_screen.dart';
-import 'package:rocket_science_login/screens/home_screen.dart';
 import 'package:rocket_science_login/screens/name_screen.dart';
 import 'package:rocket_science_login/screens/password_screen.dart';
 import 'package:rocket_science_login/services/fire_auth.dart';

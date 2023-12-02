@@ -1,7 +1,12 @@
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:rocket_science_login/widgets/buttomsheet.dart';
 import 'package:rocket_science_login/widgets/custom_buttons.dart';
 import 'package:rocket_science_login/widgets/custom_textfield.dart';
+import 'package:markdown/markdown.dart' as md;
 
 class NameScreen extends StatefulWidget {
   final int dotPosition;
@@ -72,6 +77,47 @@ class _NameScreenState extends State<NameScreen> {
                   activeShape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              RichText(
+                text: TextSpan(
+                  text: "By clicking Sign Up, you agree to our ",
+                  style: const TextStyle(
+                    fontSize: 16,
+                  ),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: 'Privacy Policy',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => showCustomBottomSheet(
+                              context: context,
+                              mdFile: 'assets/privacy_policy.md',
+                            ),
+                    ),
+                    const TextSpan(
+                      text: ' and',
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                    TextSpan(
+                      text: ' Terms of Service.',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => showCustomBottomSheet(
+                              context: context,
+                              mdFile: 'assets/terms_of_service.md',
+                            ),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(height: 32),
