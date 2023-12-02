@@ -1,4 +1,4 @@
-package com.example.rocket_science_login
+package com.apkeroo.rocketlaunchsignin
 
 import io.flutter.embedding.android.FlutterActivity
 

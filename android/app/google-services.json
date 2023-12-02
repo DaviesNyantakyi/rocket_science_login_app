@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:981243475006:android:b4632de63ba7abf48e4d6f",
+        "mobilesdk_app_id": "1:981243475006:android:ad4fd7901286890b8e4d6f",
         "android_client_info": {
-          "package_name": "com.example.rocket_science_login"
+          "package_name": "com.apkeroo.rocketlaunchsignin"
         }
       },
       "oauth_client": [],
