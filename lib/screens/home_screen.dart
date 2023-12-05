@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rocket_science_login/screens/pageview_wrapper.dart';
 import 'package:rocket_science_login/services/fire_auth.dart';
 import 'package:rocket_science_login/widgets/custom_buttons.dart';
 
@@ -52,6 +53,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 text: 'Logout',
                 onPressed: () async {
                   await MyFireBase().signOutUser();
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PageViewWrapper(),
+                    ),
+                  );
                 },
               )
             ],

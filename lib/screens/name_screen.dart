@@ -1,12 +1,9 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:rocket_science_login/widgets/buttomsheet.dart';
 import 'package:rocket_science_login/widgets/custom_buttons.dart';
 import 'package:rocket_science_login/widgets/custom_textfield.dart';
-import 'package:markdown/markdown.dart' as md;
 
 class NameScreen extends StatefulWidget {
   final int dotPosition;
